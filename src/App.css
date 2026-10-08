@@ -1,0 +1,450 @@
+/* ================================
+   기본 설정
+================================ */
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: #eef2f7;
+  font-family:
+    -apple-system,
+    BlinkMacSystemFont,
+    "Segoe UI",
+    Arial,
+    sans-serif;
+}
+
+
+/* ================================
+   관리자 전체 화면
+================================ */
+
+.admin-page {
+  width: 600px;
+  max-width: calc(100% - 40px);
+
+  margin: 50px auto;
+  padding: 30px;
+
+  background: #ffffff;
+
+  border-radius: 18px;
+
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+}
+
+
+/* ================================
+   관리자 제목
+================================ */
+
+.admin-page h1 {
+  margin: 0 0 25px;
+
+  text-align: center;
+
+  font-size: 28px;
+  font-weight: 700;
+
+  color: #222222;
+}
+
+
+/* ================================
+   포인트 지급/차감 영역
+================================ */
+
+.point-control {
+  width: 100%;
+
+  padding: 24px;
+
+  margin-bottom: 25px;
+
+  background: #f5f7fb;
+
+  border-radius: 14px;
+
+  border: 1px solid #e5e7eb;
+}
+
+.point-control h2 {
+  margin: 0 0 20px;
+
+  text-align: center;
+
+  font-size: 19px;
+
+  font-weight: 600;
+}
+
+
+/* ================================
+   입력 폼
+================================ */
+
+.point-form {
+  width: 100%;
+
+  margin-bottom: 15px;
+
+  display: flex;
+
+  flex-direction: column;
+
+  gap: 6px;
+}
+
+
+/* 입력 항목 제목 */
+
+.point-form label {
+  text-align: center;
+
+  font-size: 13px;
+
+  font-weight: 600;
+
+  color: #475569;
+}
+
+
+/* ================================
+   선택창 및 입력창
+================================ */
+
+.point-form select,
+.point-form input {
+  width: 100%;
+
+  height: 42px;
+
+  padding: 0 12px;
+
+  background: #ffffff;
+
+  border: 1px solid #d7dce5;
+
+  border-radius: 7px;
+
+  font-size: 14px;
+
+  color: #333333;
+}
+
+
+/* 입력창 선택 시 */
+
+.point-form select:focus,
+.point-form input:focus {
+  outline: none;
+
+  border-color: #6366f1;
+
+  box-shadow:
+    0 0 0 2px rgba(99, 102, 241, 0.12);
+}
+
+
+/* ================================
+   포인트 반영 버튼
+================================ */
+
+.apply-button {
+  width: 100%;
+
+  height: 42px;
+
+  margin-top: 3px;
+
+  border: none;
+
+  border-radius: 7px;
+
+  background: #635bff;
+
+  color: #ffffff;
+
+  font-size: 14px;
+
+  font-weight: 600;
+
+  cursor: pointer;
+}
+
+.apply-button:hover {
+  background: #5148e5;
+}
+
+
+/* ================================
+   결과 메시지
+================================ */
+
+.result-message {
+  margin: 15px 0 0;
+
+  padding: 10px;
+
+  text-align: center;
+
+  background: #ecfdf5;
+
+  color: #15803d;
+
+  border-radius: 7px;
+
+  font-size: 13px;
+}
+
+
+/* ================================
+   사용자 목록
+================================ */
+
+.user-item {
+  width: 100%;
+
+  min-height: 45px;
+
+  padding: 12px 15px;
+
+  margin-bottom: 7px;
+
+  display: flex;
+
+  justify-content: space-between;
+
+  align-items: center;
+
+  background: #f8fafc;
+
+  border-radius: 7px;
+}
+
+
+/* 사용자 이름 */
+
+.user-item span {
+  font-size: 14px;
+
+  color: #334155;
+}
+
+
+/* 사용자 포인트 */
+
+.user-item strong {
+  font-size: 14px;
+
+  color: #4f46e5;
+}
+
+
+/* ================================
+   전체 사용자 수
+================================ */
+
+.user-count {
+  margin: 15px 0 0;
+
+  text-align: center;
+
+  font-size: 14px;
+
+  font-weight: 600;
+
+  color: #64748b;
+}
+
+
+/* ================================
+   버튼 영역
+================================ */
+
+.button-area {
+  display: flex;
+
+  gap: 10px;
+
+  margin-top: 18px;
+}
+
+.button-area button {
+  padding: 9px 18px;
+
+  border: none;
+
+  border-radius: 7px;
+
+  background: #334155;
+
+  color: white;
+
+  font-size: 13px;
+
+  cursor: pointer;
+}
+
+.button-area button:hover {
+  background: #1e293b;
+}
+
+
+/* ================================
+   포인트 그래프
+================================ */
+
+.graph-area {
+  width: 100%;
+
+  margin-top: 25px;
+
+  padding: 20px;
+
+  background: #f5f7fb;
+
+  border-radius: 14px;
+
+  border: 1px solid #e5e7eb;
+}
+
+.graph-area h2 {
+  text-align: center;
+
+  margin-bottom: 25px;
+}
+
+.graph-row {
+  display: flex;
+
+  align-items: center;
+
+  gap: 10px;
+
+  margin-bottom: 18px;
+}
+
+.graph-name {
+  width: 60px;
+
+  font-size: 13px;
+
+  font-weight: 600;
+}
+
+.graph-background {
+  width: 350px;
+
+  height: 28px;
+
+  background: #e2e8f0;
+
+  border-radius: 6px;
+
+  overflow: hidden;
+}
+
+.graph-bar {
+  height: 100%;
+
+  background: #635bff;
+
+  border-radius: 6px;
+
+  transition: width 0.4s ease;
+}
+
+.graph-row strong {
+  width: 90px;
+
+  font-size: 13px;
+}
+
+
+/* ================================
+   포인트 변경 이력
+================================ */
+
+.history-area {
+  width: 100%;
+
+  margin-top: 25px;
+
+  padding: 20px;
+
+  background: #f5f7fb;
+
+  border-radius: 14px;
+
+  border: 1px solid #e5e7eb;
+}
+
+.history-area h2 {
+  text-align: center;
+
+  margin-bottom: 18px;
+}
+
+.history-item {
+  display: flex;
+
+  justify-content: space-between;
+
+  align-items: center;
+
+  padding: 10px 12px;
+
+  margin-bottom: 6px;
+
+  background: white;
+
+  border-radius: 7px;
+
+  font-size: 13px;
+}
+
+.empty-history {
+  text-align: center;
+
+  color: #64748b;
+
+  font-size: 13px;
+}
+
+
+/* ================================
+   모바일 화면
+================================ */
+
+@media (max-width: 650px) {
+
+  .admin-page {
+    width: calc(100% - 20px);
+
+    margin: 20px auto;
+
+    padding: 20px;
+  }
+
+  .point-control {
+    padding: 18px;
+  }
+
+  .graph-row {
+    flex-wrap: wrap;
+  }
+
+  .graph-background {
+    flex: 1;
+
+    width: auto;
+  }
+
+  .button-area {
+    flex-direction: column;
+  }
+}
